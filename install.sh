@@ -26,7 +26,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-nvm install 25
+nvm install --lts
+nvm use --lts
 
 # AUGMENT CODE
 npm install -g @augmentcode/auggie
