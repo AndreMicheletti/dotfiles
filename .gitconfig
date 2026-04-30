@@ -7,3 +7,5 @@
   start = "!ticket_new() { git switch -C AndreMicheletti/$1;}; ticket_new"
   ticket = "!ticket() { git switch $(git branch | grep -iF $1); }; ticket"
   update = "!update() { git fetch && git merge master --no-edit; }; update"
+  p = "push"
+  c = "checkout"
