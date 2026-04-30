@@ -4,6 +4,7 @@
 cp ./.bashrc $HOME/.bashrc
 cp ./.bash_profile $HOME/.bash_profile
 cp ./.gitconfig $HOME/.gitconfig
+cp ./.zshrc $HOME/.zshrc
 
 
 # Tasks
