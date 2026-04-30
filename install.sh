@@ -20,8 +20,10 @@ cp ./Taskfile.yml /workspaces/
 
 
 # NODE
-# install node 26 and set it as the global default
-mise use --global node@26
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Augment CLI
-npm install -g @augmentcode/auggie
+nvm install latest
